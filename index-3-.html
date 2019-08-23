@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+   
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	  <link rel="stylesheet" href="./style.css" type="text/css">
+	  
+  </head>
+  <body>
+	  
+    <div id="box"></div>
+    
+	<script type="text/babel">
+		
+		class Btn extends React.Component {
+			render() {
+				return (
+					<div>
+						<button type={this.props.behavior}>{this.props.children}</button> 
+					</div>
+				);
+			}
+		}
+
+ReactDOM.render(
+	<div>
+		<Btn behavior="submit">Send</Btn>
+		<Btn behavior="submit">Stop</Btn>
+		<Btn behavior="submit">Repeat</Btn>
+	</div>,
+       document.querySelector("#box"),		   
+	);	
+	
+
+    </script>
+	  
+   
+  </body>
+</html>

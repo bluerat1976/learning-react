@@ -1,0 +1,23 @@
+#box {
+	width: 300px;
+	height: 300px;
+	background-color: #f4f7f5f7;
+	border: 1px solid #cccccc;
+}
+
+#box h1 {
+	color: darkblue;
+}
+
+button {
+	width: 60px;
+	height: 40px;
+	margin: 10px;
+	border: 2px solid #e1a004;
+	color: #bf8702;
+}
+
+button:hover {
+	border: 2px solid #e10445;
+	color: #e10445;
+}

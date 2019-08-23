@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+   
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	  <link rel="stylesheet" href="./style.css" type="text/css">
+	  
+  </head>
+  <body>
+	  
+    <div id="box"></div>
+    
+	<script type="text/babel">
+		
+		class HelloWorld extends React.Component {
+			render() {
+				return <p>Hello my {this.props.item}.</p>
+			}
+		}
+
+ReactDOM.render(
+	<div>
+		 <HelloWorld item="cats"/> 
+		 <HelloWorld item="flowers"/>
+		 <HelloWorld item="Montenegro"/>
+		 <HelloWorld item="front end"/>
+		 <HelloWorld item="new job and freedom"/> 
+	</div>,
+       document.querySelector("#box"),
+      );	
+	
+    </script>
+	  
+   
+  </body>
+</html>
