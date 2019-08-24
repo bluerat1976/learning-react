@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+   
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	
+	  
+  </head>
+  <body>
+	  
+    <div id="box"></div>
+    
+	<script type="text/babel">
+		
+		class Stuff extends React.Component {
+			render() {
+				return (
+					<h1> Boring static {Math.random()*100/22} content</h1>
+				);
+			}
+		}
+
+ReactDOM.render(
+	<div>
+		<Stuff/>
+	</div>,
+       document.querySelector("#box"),		   
+	);	
+	
+
+    </script>
+	  
+   
+  </body>
+</html>
