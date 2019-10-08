@@ -32,13 +32,11 @@
                 
 				return ( 
                     <div style={textStyle}>
-                     {this.props.display}
+                        {this.props.display}
                     </div>  
                 );
 			}
 		}
-
-
         class CounterParent extends React.Component {
             
             constructor(props) {
@@ -53,12 +51,11 @@
             
             increase (e) {
                 this.setState ({
-                    count: this.state.count + 1
+                    count: this.state.count + 10
                 });
             }
             
             render() {
-                
                 var backgroundStyle = {
                     padding: 50,
                     backgroundColor: 'ffc53a',
