@@ -63,7 +63,7 @@
                 this.setState ({
                     count: currentCount
                 });
-                return ;
+             
             }
             
             render() {
@@ -90,7 +90,7 @@
                 return (
                    <div style={backgroundStyle}>
                         <Counter display={this.state.count} />
-                        <button onClick={this.increase}>+</button>
+                        <button style={buttonStyle} onClick={this.increase}>+</button>
                     </div> 
                 );
             }  
@@ -102,7 +102,7 @@
         
             </div>,
 	
-            document.querySelector('#box'),
+            document.querySelector("#box")
         );	
 	
     </script>
