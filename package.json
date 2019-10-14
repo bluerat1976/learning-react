@@ -1,0 +1,24 @@
+{
+  "name": "learning-react",
+  "version": "1.0.0",
+  "description": "React learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluerat1976/learning-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bluerat1976/learning-react/issues"
+  },
+  "homepage": "https://github.com/bluerat1976/learning-react#readme",
+  "devDependencies": {
+    "create-react-app": "^3.2.0"
+  },
+  "dependencies": {}
+}

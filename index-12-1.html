@@ -72,9 +72,7 @@
       }
       
       setNewColor(e){
-        this.setState({
-          bgColor: this.state.color
-        });
+        this.setState({bgColor: this.state.color});
 
         e.preventDefault();
       }
@@ -84,7 +82,7 @@
           backgroundColor: this.state.bgColor
         };
 
-        var self = this;
+    
 
         return (
           <div className="colorArea">
